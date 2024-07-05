@@ -4,12 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pathfit 3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            min-height: 100vh;
+            background-color: hsl(0, 0%, 8%);
+        }
+
+        header{
+            padding: 2em;
+            text-align: center;
+            color: #f1f1f1;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2em;
+            margin: 2em 0 2em;
+        }
+        video{
+            min-width: 100px;
+            width: 400px;
+        }
+
+        @media screen and (max-width: 1440px){
+            .container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        @media screen and (max-width: 375px){
+            .container{
+                display: block;
+            }
+            video{
+                width: 100%;
+                max-width: 400px;
+                margin-bottom: 1em;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>Part Two Midterm Exam</h1>
+        <h2>12 Strikes and 12 Blocks</h2>
         <p>Edic, Jerico Jones B.</p>
-        <p>Pathfit 3 1C</p>
+        <p>Pathfit 3 CITCS-1C</p>
+    </header>
+    <div class="container">
+        <video src="videos/arnis-strike.mp4" controls>12 Strikes</video>
+        <video src="videos/arnis-block.mp4" controls>12 Blocks</video>
     </div>
 </body>
 </html>
